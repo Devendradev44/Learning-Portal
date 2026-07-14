@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GVCC Learning Portal
 
-## Getting Started
+## Overview
 
-First, run the development server:
+A responsive learning portal built with Next.js where students can watch learning videos, create bookmarks at specific timestamps, and resume playback from saved bookmarks.
+
+## Features
+
+- Learning Portal Dashboard
+- Multiple Learning Videos
+- Video Player
+- Multiple Bookmarks Per Video
+- Resume Playback from Bookmarks
+- Continue Watching
+- Persistent Local Storage
+- Screenshot Protection
+  - Watermark Overlay
+  - Right Click Disabled
+  - Blur on Tab Switch
+- Responsive UI
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- React Player
+- Local Storage
+
+## Installation
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+src/
+ ├── app/
+ ├── components/
+ ├── data/
+ └── lib/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+public/
+ ├── thumbnails/
+ └── videos/
+```
 
-## Learn More
+## Screenshot Protection
 
-To learn more about Next.js, take a look at the following resources:
+Browsers cannot completely prevent operating system screenshots. This project implements practical deterrents including:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Watermark overlay
+- Right-click prevention
+- Blur when the browser tab loses focus
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Improvements
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Firebase Database
+- Authentication
+- Watch Progress Analytics
+- Cloud Video Storage
